@@ -1,0 +1,24 @@
+<div class="cartcontianer" >
+  <div class="card w-50 text-bg-light" >
+    <div class="card-body">
+      <form action="/route/add" method="post">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Create Project</h1>
+          <a href="/" class="btn-close" aria-label="Close"></a>
+          
+        </div>
+        <label for="name" class="col-form-label fs-6">Name:</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+        <label for="desc" class="col-form-label fs-6">Description:</label>
+        <textarea type="text" class="form-control" id="desc" name="desc" required></textarea>
+        <label for="author" class="col-form-label fs-6">Author:</label>
+        <input type="text" class="form-control" id="author" name="author" required>
+        <div style="display: flex; justify-content: center;">
+          <button type="submit" class="btn btn-primary" style="margin-top:5px">Create</button>
+        </div>
+        
+      </form>
+      
+    </div>
+  </div>
+</div>

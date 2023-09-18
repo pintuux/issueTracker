@@ -1,0 +1,60 @@
+<div class="cartcontianer" >
+     <div class="card" style="width: 50%; ">
+        <form action="/route/save" method="post">
+            <div class="row mb-3 " style="margin:10px">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Title</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control " id="inputEmail3" name="title" >
+              </div>
+            </div>
+            <div class="row mb-3" style="margin:10px">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Description:</label>
+              <div class="col-sm-10">
+                <textarea type="text" class="form-control" id="inputPassword3" name="desc"></textarea>
+              </div>
+            </div>
+            <fieldset class="row mb-3" style="margin:10px">
+              <legend class="col-form-label col-sm-2 pt-0" >Issue Type</legend>
+              <div class="col-sm-10" >
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="issueType" id="gridRadios1" value="bug" >
+                  <label class="form-check-label" for="gridRadios1">
+                    Bug
+                  </label>
+                </div>
+                <div class="form-check" >
+                  <input class="form-check-input" type="radio" name="issueType" id="gridRadios2" value="improvment">
+                  <label class="form-check-label" for="gridRadios2">
+                   UI Improvment
+                  </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="issueType" id="gridRadios1" value="enhancement" >
+                    <label class="form-check-label" for="gridRadios1">
+                      Enhancement
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="issueType" id="gridRadios1" value="duplicate" >
+                    <label class="form-check-label" for="gridRadios1">
+                      Duplicate
+                    </label>
+                  </div>
+                
+                
+              </div>
+            </fieldset>
+            
+            <div class="row mb-3 " style="margin:10px">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Author</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control " id="inputEmail3" name="author" >
+                </div>
+              </div>
+              <div style="display: flex;flex-direction: row-reverse;">
+                <button type="submit" class="btn btn-primary">Post</button>
+            </div>
+          </form>
+    </div>
+    
+</div>

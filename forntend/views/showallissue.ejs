@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary"  >
+    <div style="display: flex; justify-content: space-between; width:100%">
+        <div class="container-md">
+            <a class="navbar-brand" href="/">Back</a>
+          </div>
+          
+    </div>
+    
+</nav>
+<div class="cartcontianer">
+    <% if(issues.length !=0) {%>
+        <% for(let i= 0; i < issues.length; i++) {%>
+            <div class="card" style="width: 40%;">
+                <h5 class="card-header">Issue title:<%= issues[i].title%></h5>
+                <div class="card-body">
+                  <h5 class="card-title">Description: <%= issues[i].desc%></h5>
+                  <p class="card-text">bug type: <%= issues[i].issueType%></p>
+                  <h4 class="card-text">Author: <%= issues[i].author%></h4>
+                </div>
+                
+              </div>
+        <%}%>
+    <%}else{%>
+        <div class="card" style="width: 18rem;">
+            <div class="modal-header">
+                <h5 class="modal-title">There is no issue...</h5>
+                <a href='/'  class="btn-close" data-bs-dismiss="modal" aria-label="Close"></a>
+              </div>
+          </div>
+    <%}%>
+</div>
